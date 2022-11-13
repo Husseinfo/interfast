@@ -9,7 +9,7 @@ import androidx.appcompat.widget.AppCompatSeekBar
 import nl.joery.timerangepicker.TimeRangePicker
 
 class MainActivity : AppCompatActivity() {
-    private val methods = arrayOf("16/8", "18/6", "20/4", "22/2", "23/1")
+    private val methods = arrayOf("16/8", "18/6", "20/4", "22/2")
 
     private lateinit var startTime: TextView
     private lateinit var endTime: TextView
@@ -78,14 +78,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun calculatePeriod() {
-        val eatingHours: Long = when (seekbar.progress) {
-            4 -> {
-                1
-            }
-            else -> {
-                8L - (seekbar.progress * 2)
-            }
-        }
+        val eatingHours = 8L - (seekbar.progress * 2)
 
         val awakeDuration = TimeRangePicker.TimeDuration(picker.endTime, picker.startTime)
         val midEatingTime = picker.endTime.localTime.plusHours(awakeDuration.hour.toLong() / 2)

@@ -190,7 +190,7 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fl_sleeping" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_sleeping_duration" />
 
     <TextView
         android:id="@+id/tv_method_selected"
@@ -210,7 +210,7 @@
         style="@style/Widget.AppCompat.SeekBar.Discrete"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:max="4"
+        android:max="3"
         android:progress="1"
         app:layout_constraintTop_toBottomOf="@id/tv_method_selected" />
 
