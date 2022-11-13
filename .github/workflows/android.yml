@@ -25,7 +25,7 @@ jobs:
         uses: actions/upload-artifact@v1
         with:
           name: apk
-          path: app/build/outputs/apk/debug/app-debug.apk 
+          path: app/build/outputs/apk/debug/app-debug.apk
   release:
     name: Release APK
     needs: apk
@@ -35,15 +35,15 @@ jobs:
       - name: Download APK from build
         uses: actions/download-artifact@v1
         with:
-          name: apk  
+          name: apk
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           tag_name: ${{ github.ref }}
-          release_name: ${{ github.ref }} 
+          release_name: ${{ github.ref }}
       - name: Upload APK
         id: upload_release_asset
         uses: actions/upload-release-asset@v1.0.1
@@ -52,5 +52,5 @@ jobs:
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: apk/app-debug.apk
-          asset_name: Countin.apk
+          asset_name: Interfast.apk
           asset_content_type: application/zip
