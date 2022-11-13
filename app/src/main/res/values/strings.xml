@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Interfast</string>
+
+    <string name="sleep">Sleep at</string>
+    <string name="wake">Wake at</string>
+    <string name="duration">Your sleep duration is %1$s</string>
+    <string name="set_your_sleep_time_window">Set your sleep time window</string>
+
 </resources>
