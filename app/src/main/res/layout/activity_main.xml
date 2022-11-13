@@ -183,7 +183,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
-        android:text="@string/periods"
+        android:text="@string/durations"
         android:textAlignment="center"
         android:textSize="18sp"
         android:textStyle="bold"
