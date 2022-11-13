@@ -5,5 +5,9 @@
     <string name="wake">Wake at</string>
     <string name="duration">Your sleep duration is %1$s</string>
     <string name="set_your_sleep_time_window">Set your sleep time window</string>
+    <string name="periods">Fast/Feed periods</string>
+    <string name="eating_period">Eating period</string>
+    <string name="breakfast">Start at</string>
+    <string name="fast">End at</string>
 
 </resources>
