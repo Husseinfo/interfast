@@ -10,6 +10,7 @@
         android:id="@+id/tv_sleeping"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
         android:text="@string/set_your_sleep_time_window"
         android:textAlignment="center"
         android:textSize="18sp"
@@ -23,7 +24,7 @@
         android:layout_width="280dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_sleeping">
@@ -230,6 +231,7 @@
         android:id="@+id/card_start"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
         app:layout_constraintEnd_toStartOf="@+id/card_end"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_result">
@@ -266,7 +268,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/card_start"
-        app:layout_constraintTop_toBottomOf="@id/tv_result">
+        app:layout_constraintTop_toTopOf="@id/card_start">
 
         <LinearLayout
             android:layout_width="wrap_content"
