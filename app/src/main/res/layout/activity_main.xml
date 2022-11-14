@@ -62,7 +62,7 @@
                     android:layout_gravity="center_vertical"
                     android:contentDescription="@string/sleep"
                     android:src="@drawable/ic_moon"
-                    app:tint="#000" />
+                    app:tint="?colorPrimary" />
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -104,7 +104,7 @@
                     android:layout_gravity="center_vertical"
                     android:contentDescription="@string/wake"
                     android:src="@drawable/ic_alarm"
-                    app:tint="#000" />
+                    app:tint="?colorPrimary" />
 
                 <LinearLayout
                     android:layout_width="0dp"
