@@ -12,3 +12,4 @@ Get your eating period according to your _sleeping schedule_ and _Fast/Feed targ
 - [X] Selected settings persistence
 - [ ] Eating period slider
 - [ ] Support for other [IF types](https://en.wikipedia.org/wiki/Intermittent_fasting#Types)
+- [ ] Eat/Fast time Countdown
