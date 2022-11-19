@@ -11,5 +11,7 @@
     <string name="fast">Ends at</string>
     <string name="extreme">🥵</string>
     <string name="moderate">🤗</string>
+    <string name="title_home">Home</string>
+    <string name="title_settings">Settings</string>
 
 </resources>
