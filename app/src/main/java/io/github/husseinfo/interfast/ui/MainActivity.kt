@@ -7,6 +7,8 @@ import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import io.github.husseinfo.interfast.R
 import io.github.husseinfo.interfast.databinding.ActivityMainBinding
+import io.github.husseinfo.interfast.isFirstRun
+import io.github.husseinfo.interfast.saveFirstRun
 
 class MainActivity : AppCompatActivity() {
 
@@ -19,7 +21,12 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         val navView: BottomNavigationView = binding.navView
-        val navController = findNavController(R.id.nav_host_fragment_activity_main2)
+        val navController = findNavController(R.id.nav_host)
         navView.setupWithNavController(navController)
+
+        if (isFirstRun(this)) {
+            navController.navigate(R.id.navigation_settings)
+            saveFirstRun(this)
+        }
     }
 }
