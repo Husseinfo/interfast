@@ -1,5 +1,6 @@
 # Interfast
 [![Android CI](https://github.com/Husseinfo/interfast/actions/workflows/android.yml/badge.svg)](https://github.com/Husseinfo/interfast/actions/workflows/android.yml)
+[![Image of views-counter](https://github.com/Husseinfo/views-counter/blob/master/svg/565507905/badge.svg)](https://github.com/Husseinfo/views-counter/blob/master/readme/565507905/week.md)
 [![APK](https://img.shields.io/badge/Download-APK-red)](https://github.com/Husseinfo/interfast/releases/download/v1.0.1/Interfast.apk)
 
 [Intermittent Fasting](https://www.healthline.com/nutrition/intermittent-fasting-guide#methods) (IF) is an eating pattern that cycles between periods of fasting and eating.  
