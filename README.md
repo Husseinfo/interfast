@@ -14,3 +14,11 @@ Get your eating period according to your _sleeping schedule_ and _Fast/Feed targ
 - [ ] Eating period slider
 - [ ] Support for other [IF types](https://en.wikipedia.org/wiki/Intermittent_fasting#Types)
 - [ ] Eat/Fast time Countdown
+
+# Download
+
+[<img src="https://gitlab.com/IzzyOnDroid/repo/-/raw/master/assets/IzzyOnDroid.png"
+     alt="Get it on IzzyOnDroid"
+     height="80">](https://apt.izzysoft.de/fdroid/index/apk/io.github.husseinfo.interfast)
+
+Or get the APK from the [Releases Section](https://github.com/Husseinfo/interfast/releases/latest).
