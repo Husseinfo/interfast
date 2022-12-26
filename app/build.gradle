@@ -22,6 +22,12 @@ android {
             keyAlias 'androiddebugkey'
             keyPassword 'android'
         }
+        release {
+            storeFile file("../keystore")
+            storePassword "$System.env.SIGNING_STORE_PASSWORD"
+            keyAlias "$System.env.SIGNING_KEY_ALIAS"
+            keyPassword "$System.env.SIGNING_KEY_PASSWORD"
+        }
     }
 
     buildTypes {
@@ -32,6 +38,7 @@ android {
         release {
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
         }
     }
     compileOptions {

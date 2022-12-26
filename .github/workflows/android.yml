@@ -19,13 +19,21 @@ jobs:
           java-version: '11'
           distribution: 'temurin'
           cache: gradle
+      - name: Decode Keystore
+        env:
+          BASE64_JKS: ${{ secrets.KEYSTORE }}
+        run: echo $BASE64_JKS | base64 -di > keystore
       - name: Build APK
-        run: bash ./gradlew assembleDebug --stacktrace
+        run: bash ./gradlew app:assembleRelease --stacktrace
+        env:
+          SIGNING_KEY_ALIAS: ${{ secrets.SIGNING_KEY_ALIAS }}
+          SIGNING_KEY_PASSWORD: ${{ secrets.SIGNING_KEY_PASSWORD }}
+          SIGNING_STORE_PASSWORD: ${{ secrets.SIGNING_STORE_PASSWORD }}
       - name: Upload APK
         uses: actions/upload-artifact@v1
         with:
           name: apk
-          path: app/build/outputs/apk/debug/app-debug.apk
+          path: app/build/outputs/apk/release/app-release.apk
   release:
     name: Release APK
     needs: apk
@@ -51,6 +59,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: apk/app-debug.apk
+          asset_path: apk/app-release.apk
           asset_name: Interfast.apk
           asset_content_type: application/zip
