@@ -4,6 +4,14 @@
 [![Image of views-counter](https://github.com/Husseinfo/views-counter/blob/master/svg/565507905/badge.svg)](https://github.com/Husseinfo/views-counter/blob/master/readme/565507905/year.md)
 [![APK](https://img.shields.io/badge/Download-APK-red)](https://github.com/Husseinfo/interfast/#Download)
 
+Interfast is a Kotlin Android Application for your intermittent fasting journey, it is:
+ - [x] Free
+ - [x] Open Source
+ - [x] Open for contributions
+ - [x] Ads free
+ - [x] Tracking free
+ - [x] And most importantly, 🧂 Sugar free!
+
 [Intermittent Fasting](https://www.healthline.com/nutrition/intermittent-fasting-guide#methods) (IF)
 is an eating pattern that cycles between periods of fasting and eating.  
 Get your eating period according to your _sleeping schedule_ and _Fast/Feed target_.
