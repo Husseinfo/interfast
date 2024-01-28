@@ -2,7 +2,7 @@
 
 [![Android CI](https://github.com/Husseinfo/interfast/actions/workflows/android.yml/badge.svg)](https://github.com/Husseinfo/interfast/actions/workflows/android.yml)
 [![Image of views-counter](https://github.com/Husseinfo/views-counter/blob/master/svg/565507905/badge.svg)](https://github.com/Husseinfo/views-counter/blob/master/readme/565507905/year.md)
-[![APK](https://img.shields.io/badge/Download-APK-red)](https://github.com/Husseinfo/interfast/#Download)
+[![APK](https://img.shields.io/badge/Download-APK-red)](https://github.com/Husseinfo/interfast#Download)
 
 Interfast is a Kotlin Android Application for your intermittent fasting journey, it is:
  - [x] Free
